@@ -1,6 +1,40 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
   width: 100vh;
   height: 60px;
-  background-color: #171717;
-;
+  background-color: var(--color-dark-500);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  height: 36px;
+  //outline: 1px solid red;
+}
+
+.link {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-m);
+  font-size: var(--font-size-m);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    border: 1px dashed white;
+    bottom: 0;
+  }
+}
+
+.photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
 }

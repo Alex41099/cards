@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 
 import { Header } from './Header.tsx';
 
@@ -15,10 +14,12 @@ const meta = {
     tags: ['autodocs'],
     // More on argTypes: https://storybook.js.org/docs/api/argtypes
     argTypes: {
-        backgroundColor: { control: 'color' },
+        // backgroundColor: { control: 'color' },
     },
     // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-    args: { onClick: fn() },
+    args: {
+        // onClick: fn()
+    },
 } satisfies Meta<typeof Header>;
 
 export default meta;
@@ -27,6 +28,18 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
     args: {
+        isLogged: false,
+        userHref: 'https://www.google.com/search?q=image&oq=ima&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxiABDIJCAAQRRg7GIAEMgoIARAuGLEDGIAEMgYIAhBFGDkyBwgDEAAYgAQyBggEEEUYPTIGCAUQRRg8MgYIBhBFGEEyBggHEEUYPNIBBzg4MWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8',
+        userName: 'Ivan',
+        userPhoto: 'https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg'
+    },
+};
 
+export const Secondary: Story = {
+    args: {
+        isLogged: true,
+        userHref: 'https://www.google.com/search?q=image&oq=ima&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxiABDIJCAAQRRg7GIAEMgoIARAuGLEDGIAEMgYIAhBFGDkyBwgDEAAYgAQyBggEEEUYPTIGCAUQRRg8MgYIBhBFGEEyBggHEEUYPNIBBzg4MWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8',
+        userName: 'Ivan',
+        userPhoto: 'https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg'
     },
 };

@@ -1,5 +1,5 @@
 import './button.scss';
-import {ExitLogout} from "./assets/icons/ExitLogout.tsx";
+import {ExitLogout} from "../assets/icons/ExitLogout.tsx";
 
 type variantBtn = 'secondary'
 
