@@ -8,12 +8,11 @@
   background-color: var(--color-dark-500);
 }
 
-.wrapper {
+.header-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 100px;
   gap: 15px;
-
   height: 36px;
   //outline: 1px solid red;
 }

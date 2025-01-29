@@ -14,7 +14,7 @@ export const Header = ({isLogged, userName, userPhoto, userHref}: Props) => {
         <header className={'header'}>
             <IncubatorLogo/>
             {isLogged ?
-                <div className={'wrapper'}>
+                <div className={'header-wrapper'}>
                     <a className={'link'} href={userHref}>{userName}</a>
                     <img className={'photo'} src={userPhoto} alt={'photo user'}/>
                 </div>
