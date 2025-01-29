@@ -45,3 +45,17 @@ export const Error: Story = {
         error: 'Error!'
     },
 };
+
+export const PasswordMode: Story = {
+    args: {
+        labelValue: 'text',
+        inputPassword: true,
+    },
+};
+
+export const SearchMode: Story = {
+    args: {
+        labelValue: 'text',
+        inputSearch: true,
+    },
+};

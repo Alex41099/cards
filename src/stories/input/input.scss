@@ -1,5 +1,6 @@
 .input {
-  padding: 2px 5px;
+  padding: 5px 10px;
+  width: 100%;
 
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-m);
@@ -49,7 +50,38 @@
 }
 
 .errorMessage {
+  position: absolute;
+  bottom: -25px;
+  left: 0px;
+
   color: var(--color-danger-300);
   font-size: var(--font-size-xs);
   line-height: var(--line-height-m);
+}
+
+.eye {
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  z-index: 99;
+  cursor: pointer;
+
+}
+
+.eyeInput {
+  padding: 5px 38px 5px 10px;
+
+}
+
+.searchInput {
+  padding: 5px 10px 5px 33px;
+
+}
+
+.loupe {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  cursor: text;
 }
